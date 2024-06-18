@@ -1,0 +1,103 @@
+body
+{ 
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;    /* Центрирование по вертикали */
+    height: 100vh;
+background:linear-gradient(30deg,rgb(69, 242, 69),rgb(0, 204, 255),blue);
+}
+#final-message{
+    font-size: 35px;
+    
+    transform: translate(-50%, -50%); 
+}
+.block{
+    border-radius: 10%;
+    width: 80%;
+    height:70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Сдвиг на половину ширины и высоты */
+    padding: 20px;
+    background-color: #ffffff; /* Белый цвет для блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Легкая тень для блока */
+    text-align: center; /* Центрирование текста внутри блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Легкая тень для блока */
+}
+.header
+{ 
+    flex: 1 1 200px;
+    margin:30px;
+    font-size:75px ;
+}
+.description{
+    flex: 1 1 200px;
+    font-size: 25px;
+color:rgb(172, 172, 172)
+}
+button,#restart-button
+{
+    flex: 1 1 200px;
+    font-size:30px;
+border-color:white;
+border-radius: 100px;
+color:white;
+background-color:rgb(9, 0, 172);
+height:80px;
+width: 260px;
+size: flex ; 
+}
+button:hover{
+    padding:10px;
+    font-size:30px;
+    border-color:white;
+    border-radius: 100px;
+    color:white;
+    background-color:rgb(7, 0, 131);
+    height:80px;
+    width:260px;
+  text-align: center;
+}
+quiz-button
+{
+    flex: 1 1 200px;
+    font-size:30px;
+border-color:white;
+border-radius: 100px;
+color:white;
+background-color:rgb(9, 0, 172);
+height:80px;
+width: 260px;
+size: flex ; 
+}
+quiz-button:hover{
+    padding:10px;
+    font-size:30px;
+    border-color:white;
+    border-radius: 100px;
+    color:white;
+    background-color:rgb(7, 0, 131);
+    height:80px;
+    width:260px;
+  text-align: center;
+}
+.quiz-button.selected {
+    background-color: #4CAF50; /* Зеленый цвет фона */
+    color: white;              /* Белый цвет текста */
+}
+.quiz-button:disabled {
+    background-color: #cccccc; /* Серый цвет фона */
+    color: #666666;           /* Серый цвет текста */
+    cursor: not-allowed;      /* Курсор не доступен */
+    opacity: 0.6;             /* Полупрозрачный вид */
+}
+.quiz-button.correct {
+    background-color: #4CAF50; /* Зеленый цвет фона */
+}
+.quiz-button.incorrect {
+    background-color: #f44336; /* Красный цвет фона */
+}
+#restartButton{
+margin-top:150px;    
+}
+span{font-size: 20px;}
