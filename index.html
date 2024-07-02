@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="questions.js"></script>
+    <script defer src="script.js"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="block" id="startBlock">
+        <div class="descriptionHeader">
+            <p>Welcome</p>
+        </div>
+        <div class="description">
+            <p>Answer questions and develop your knowledge</p>
+        </div>
+        <button onclick="startQuiz()">Start</button>
+    </div>
+    <div class="block" id="questionBlock" style="display: none;">
+        <span>Correct answers: <span id="num">0</span>/7</span>
+        <div class="question" id="question"></div>
+        <button id="nextButton" style="display: none;" onclick="showNextQuestion()">Next Question</button>
+    </div>
+    <div class="block" id="finalMessage" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>You have completed the quiz.</p>
+        <p>Your score: <span id="finalScore">0</span></p>
+        <button id="restartButton" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+</body>
+</html>
