@@ -1,0 +1,120 @@
+:root
+{
+    --blockColor: #ffffff;
+    --buttonColor:rgb(9, 0, 172);
+    --buttonText: white;
+    --correctAnswer:green;
+    --incorrectAnswer: red;
+    --buttonHover:rgb(7, 0, 131);
+}
+body
+{ 
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;
+    background:linear-gradient(30deg,rgb(69, 242, 69),rgb(0, 204, 255),blue);
+}
+#finalMessage
+{
+    font-size: 35px;
+    transform: translate(-50%, -50%); 
+}
+.block
+{
+    border-radius: 10%;
+    width: 80%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px;
+    background-color:var(--blockColor); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.descriptionHeader
+{ 
+    flex: 1 1 200px;
+    margin:30px;
+    font-size:75px ;
+}
+.description
+{
+    flex: 1 1 200px;
+    font-size: 25px;
+    color:rgb(172, 172, 172)
+}
+button,#restartButton
+{
+    bottom:100px;
+    flex: 1 1 200px;
+    font-size:30px;
+    border-radius: 100px;
+    color:var(--buttonText);
+    background-color:var(--buttonColor);
+    height:80px;
+    width: 200px;
+    size: flex ; 
+}
+button:hover
+{
+    padding:10px;
+    font-size:30px;
+    border-radius: 100px;
+    color:var(--buttonText);
+    background-color:var(--buttonHover);
+    height:80px;
+    width:200px;
+    text-align: center;
+}
+.quizButton
+{
+    flex: 1 1 200px;
+    font-size:30px;
+    border-radius: 100px;
+    color:var(--buttonText);
+    background-color:var(--buttonColor);
+    height:80px;
+    width: 200px;
+    size: flex ; 
+}
+.quizButton:hover
+{
+    
+    font-size:30px;
+    border-radius: 100px;
+    color:var(--buttonText);
+    background-color:var(--buttonHover);
+    height:80px;
+    width:200px;
+    text-align: center;
+}
+.quizButton.selected
+{
+    background-color: #4CAF50; 
+    color: var(--buttonText);              
+}
+.quizButton:disabled 
+{
+    background-color: #cccccc; 
+    color: var(--buttonText);           
+    cursor: not-allowed;      
+    opacity: 0.6;             
+}
+.quizButton.correct 
+{
+    background-color: var(--correctAnswer); 
+}
+.quizButton.incorrect 
+{
+    background-color: var(--incorrectAnswer); 
+}
+#restartButton
+{
+    margin-top:150px;    
+}
+span
+{
+    font-size: 20px;
+}
